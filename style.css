@@ -1,0 +1,15 @@
+body{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-color: aqua;
+}
+
+h2{
+    font-weight: 900;
+    color:black;
+    background-color: aquamarine;
+    border: 5px solid white;
+    border-radius: 10px;
+    
+}
