@@ -1,15 +1,91 @@
+html{
+    background-color: lightyellow;
+}
 body{
+    margin:0;
     display: flex;
-    justify-items: center;
-    align-items: center;
-    background-color: aqua;
+    flex-flow: column wrap;
+    font-family: 'Mouse Memoirs', sans-serif;
+    background-image: url(./rps-pics/wp5284603.png);
+}
+.main{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
 }
 
-h2{
-    font-weight: 900;
-    color:black;
-    background-color: aquamarine;
-    border: 5px solid white;
-    border-radius: 10px;
-    font-family: sans-serif;
+.sub {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-weight:700;
+    font-size: 18px;
+    
 }
+
+.child {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 250px;
+    justify-content:first baseline;
+    align-items: center;
+    gap: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px transparent wheat;
+    border-radius: 8px;
+    background-color: rgb(94, 226, 213);
+}
+.child.two {
+    gap: 0px;
+    justify-content: space-evenly;
+}
+.scores {
+    height: 100px;
+    width: 100px;
+    border: 4px solid black;
+    border-radius: 10px;
+    background-color: yellow;
+}
+.choice {
+    height: 400px;
+    width: 200px;
+    border: 2px dotted whitesmoke;
+    border-radius: 10px;
+}
+h2,h3,h4 {
+    text-align: center;
+}
+
+button{
+    padding: 2px;
+    border: 2px solid black;
+    background-color: yellow;
+    color: black;
+    height: 50px;
+    width:82px;
+    border-radius: 10px;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 16px;
+}
+.output{
+    margin: 10px;
+    padding: 10px;
+    border: 2px transparent ;
+    border-radius: 10px;
+    background-color: rgb(94, 226, 213);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+header,footer{
+    height: 80px;
+    width:auto;
+    background-color:transparent;
+    color:black;
+    justify-items: center;
+    font-size: 22px;
+    font-weight: 900;
+    
+}
+    
+ 
