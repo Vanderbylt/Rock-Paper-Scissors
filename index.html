@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <!--<script src="rps.js" defer></script>-->
+    <script src="rps.js" defer></script>
 </head>
 <body>
     <header>
@@ -17,27 +17,34 @@
     </header>
     <div class="main">
         <div class="sub one">
-            <div class="child one">
-                <h3>Options:</h3>
-                <button><strong>ROCK</strong></button>
-                <button><strong>PAPER</strong></button>
-                <button><strong>SCISSORS</strong></button>
-            </div>
-            
-            <div class="child two">
-                <h3>Player Score</h3>
-                <div class="scores"></div>
-                <h3>Computer Score</h3>
-                <div class="scores"></div>
+            <div class="sub1child">
+                <div class="children">
+                    <div class="child one">
+                        <h3>Options:</h3>
+                        <button id="Rock"><strong>ROCK</strong></button>
+                        <button id="Paper"><strong>PAPER</strong></button>
+                        <button id="Scissors"><strong>SCISSORS</strong></button>
+                    </div>
+                    
+                    <div class="child two">
+                        <h3>Player Score</h3>
+                        <div class="scores one"></div>
+                        <h3>Computer Score</h3>
+                        <div class="scores two"></div>
+                    </div>
+                    
+                </div>
+                <p id="text"></p>
             </div>
         </div>
+        
         <div class="sub two">
             <div class="output">
-                <div class="choice"></div>
+                <div class="choice one"></div>
                 <h4>Player Choice</h4>
             </div>
             <div class="output">
-                <div class="choice"></div>
+                <div class="choice two"></div>
                 <h4>Computer Choice</h4>
             </div>
         </div>
