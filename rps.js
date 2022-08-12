@@ -58,13 +58,32 @@ function playRound(computerSelection,playerSelection){
         console.log(computerSelection);
         console.log(playerSelection);
     }
-    
+    if(pScore === 5||cScore===5){
+        main.remove();
+        foot.parentNode.insertBefore(para,foot);
+        if(pScore === 5){
+            para.textContent = 'You are Amazing!';
+        }
+        else{
+            para.textContent = 'You are Dissappointing!';
+        }
+        para.style.textAlign = 'center';
+        para.style.fontSize = '60px';
+        para.style.fontWeight = '700';
+        para.style.justifySelf = 'center';
+        pAgain.style.alignSelf = 'center';
+        pAgain.textContent = 'Play Again?'
+        pAgain.style.width = '100px';
+        pAgain.style.height = '70px';
+        foot.parentNode.insertBefore(pAgain,foot);
+        pAgain.addEventListener('click', () => {location.reload()})
+    }
 }   
 
 let pScore = 0;
 let cScore = 0;
 let main = document.querySelector('.main');
-
+const para = document.createElement('p')
 const foot = document.querySelector('footer');
 const text = document.getElementById('text');
 const playerScore = document.querySelector('.scores.one');
